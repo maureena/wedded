@@ -1,4 +1,5 @@
 Wedded::Application.routes.draw do
+  get "guests/rsvp"
   get "welcome/index"
   get "welcome/about"
 
