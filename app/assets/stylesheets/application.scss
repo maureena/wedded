@@ -32,17 +32,17 @@ h1, h2, h3, h4 {
 }
 
 .navbar .collapse {
+  background: 0, 0;
   background-color: #fff;
+  transition: background .3s ease;
 }
 
 .navbar ul {
-  background: 0, 0;
   display: block;
   text-align: left;
   style: none;
   padding-top: 5em;
   padding-bottom: 1em;
-  transition: background .5s;
 }
 
 .navbar a {
