@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
   background: 0;
   border: 0;
   padding: 1em;
+  position: absolute;
 }
 
 .navbar .collapse {
@@ -35,11 +36,13 @@ h1, h2, h3, h4 {
 }
 
 .navbar ul {
+  background: 0, 0;
   display: block;
   text-align: left;
   style: none;
   padding-top: 5em;
   padding-bottom: 1em;
+  transition: background .5s;
 }
 
 .navbar a {
