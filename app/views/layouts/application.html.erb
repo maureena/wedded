@@ -7,17 +7,24 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-  <div class="container">
-
-    <ul class="nav nav-tabs">
-      <li><%= link_to "Home", welcome_index_path %></li>
-      <li><%= link_to "RSVP", guests_rsvp_path %></li>
-    </ul>
+<body class="<%= @home_page ? 'homepage' : '' %>">
+   
+    
+    <nav class="navbar">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <ul class="nav">
+            <li><%= link_to "Home", welcome_index_path %></li>
+            <li><%= link_to "RSVP", guests_rsvp_path %></li>
+          </ul>
+        </div>
+    </nav>
 
     <%= yield %>
-  </div>
 
 </body>
 </html>

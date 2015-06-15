@@ -1,0 +1,12 @@
+.homepage {
+/*css for full size background image*/
+  background: url(image_path('Site_bg.jpg')) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height: 100%;
+  text-align: center;
+ 
+}
