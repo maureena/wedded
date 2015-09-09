@@ -49,6 +49,9 @@ end
 # Add font-awesome for better icons
 gem 'font-awesome-sass'
 
+# Generate some seed data
+gem 'faker'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
